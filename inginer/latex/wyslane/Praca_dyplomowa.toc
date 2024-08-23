@@ -1,0 +1,31 @@
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{Wstęp}{3}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Definicje, lematy, twierdzenia, przykłady i wnioski}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Czym jest gra?}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Definicje i Oznaczenia}{6}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Strategie proste}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Strategie mieszane}{7}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Twierdzenia}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Problem porównań wielokrotnych}{8}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Algorytmy wyścigowe}{11}{chapter.2}%
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {2.1}Limited Empirical Bernstein Race (LEBR) algorytm}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Improved LEBR (ILEBR)}{12}{section.2.2}%
+\contentsline {section}{\numberline {2.3}ILEBR 2}{13}{section.2.3}%
+\contentsline {section}{\numberline {2.4}ILEBR*}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.5}ILEBR* 2}{15}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Prawdopodobieństwo popełnienia błędu}{17}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Algorytmy wyznaczania optymalnej strategii}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Algorytm iteracyjny}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Real Coevolution algorytm}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Approx Coevolution 1 algorytm}{24}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Approx Coevolution 2 algorytm}{26}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Gry}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Gra w wojnę}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Rrrats!}{28}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Wyniki działania algorytmów dla gier}{29}{chapter.5}%
+\contentsline {chapter}{Podsumowanie}{33}{chapter*.16}%
+\contentsline {chapter}{Dodatek}{35}{chapter*.17}%
+\contentsline {section}{\numberline {5.1}Dowód Lematu \ref {lemma Bernstein race without maximum race length}}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Dowód nierówności (\ref {eq:error probability})}{35}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Dowód wyrażenia (\ref {eq:alpfa_determinant})}{36}{section.5.3}%

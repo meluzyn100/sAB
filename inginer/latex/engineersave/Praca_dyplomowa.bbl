@@ -1,0 +1,64 @@
+\begin{thebibliography}{10}
+
+\bibitem{cauwet2018surprising}
+{\sc Cauwet, M.-L., Teytaud, O.}
+\newblock Surprising strategies obtained by stochastic optimization in
+  partially observable games.
+\newblock In {\em 2018 IEEE Congress on Evolutionary Computation (CEC)\/}
+  (2018), IEEE, pp.~1--8.
+
+\bibitem{Collet_2000}
+{\sc Collet, P., Lutton, E., Raynal, F., Schoenauer, M.}
+\newblock Polar {IFS}+{P}arisian {G}enetic {P}rogramming={E}fficient {IFS}
+  {I}nverse {P}roblem {S}olving.
+\newblock {\em Genetic Programming and Evolvable Machines 1}, 4 (2000),
+  339--361.
+
+\bibitem{droste1998rigorous}
+{\sc Droste, S., Jansen, T., Wegener, I.}
+\newblock A rigorous complexity analysis of the (1+1) evolutionary algorithm
+  for separable functions with boolean inputs.
+\newblock {\em Evolutionary Computation 6}, 2 (1998), 185--196.
+
+\bibitem{Figielska2006}
+{\sc Figielska, E.}
+\newblock Algorytmy ewolucyjne i ich zastosowania.
+\newblock {\em Zeszyty Naukowe Warszawskiej Wy{\.z}szej Szko{\l}y Informatyki},
+  1 (2006), 81--92.
+
+\bibitem{heidrich2011non}
+{\sc Heidrich-Meisner, V., Igel, C.}
+\newblock Non-linearly increasing resampling in racing algorithms.
+\newblock In {\em European Symposium on Artificial Neural Networks\/} (2011),
+  Evere, Belgium: d-side publications, pp.~465--470.
+
+\bibitem{Maron-1993-15969}
+{\sc Maron, O., Moore, A.}
+\newblock Hoeffding races: Accelerating model selection search for
+  classification and function approximation.
+\newblock In {\em Proceedings of (NeurIPS) Neural Information Processing
+  Systems\/} (November 1993), Morgan Kaufmann, pp.~59 -- 66.
+
+\bibitem{Mnih_2008}
+{\sc Mnih, V., Szepesv{\'{a}}ri, C., Audibert, J.-Y.}
+\newblock Empirical bernstein stopping.
+\newblock In {\em Proceedings of the 25th international conference on Machine
+  learning - {ICML} {\textquotesingle}08\/} (2008), {ACM} Press.
+
+\bibitem{platkowski2012wstkep}
+{\sc P{\l}atkowski, T.}
+\newblock Wst{\k{e}}p do teorii gier.
+\newblock {\em Uniwersytet Warszawski\/} (2012).
+
+\bibitem{prisner2014game}
+{\sc Prisner, E.}
+\newblock {\em Game theory through examples}, vol.~46.
+\newblock American Mathematical Soc., 2014.
+
+\bibitem{Von_Stengel_2002}
+{\sc Stengel, B.~V.}
+\newblock Chapter 45 computing equilibria for two-person games.
+\newblock In {\em Handbook of Game Theory with Economic Applications}.
+  Elsevier, 2002, pp.~1723--1759.
+
+\end{thebibliography}

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Praca_dyplomowa.aux
+The style file: bibliografia_styl.bst
+Database file #1: bibliografia.bib
+Warning--empty journal in Figielska2006
+You've used 10 entries,
+            2253 wiz_defined-function locations,
+            596 strings with 5769 characters,
+and the built_in function-call counts, 3483 in all, are:
+= -- 348
+> -- 120
+< -- 0
++ -- 51
+- -- 40
+* -- 237
+:= -- 536
+add.period$ -- 31
+call.type$ -- 10
+change.case$ -- 49
+chr.to.int$ -- 0
+cite$ -- 11
+duplicate$ -- 157
+empty$ -- 310
+format.name$ -- 40
+if$ -- 760
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 11
+newline$ -- 53
+num.names$ -- 20
+pop$ -- 64
+preamble$ -- 1
+purify$ -- 40
+quote$ -- 0
+skip$ -- 105
+stack$ -- 0
+substring$ -- 236
+swap$ -- 49
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 38
+warning$ -- 1
+while$ -- 37
+width$ -- 12
+write$ -- 106
+(There was 1 warning)
