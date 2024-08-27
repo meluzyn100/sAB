@@ -3,133 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Praca_dyplomowa.aux
 The style file: bibliografia_styl.bst
 Database file #1: bibliografia.bib
-Repeated entry---line 128 of file bibliografia.bib
- : @book{Hollander2013
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 172 of file bibliografia.bib
- : @article{Kohavi2013
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 210 of file bibliografia.bib
- : @article{Benjamini1995
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 405 of file bibliografia.bib
- : @article{Pocock1977
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 416 of file bibliografia.bib
- : @article{DeMets1994
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 428 of file bibliografia.bib
- : @article{Holm1979
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 439 of file bibliografia.bib
- : @book{Rosenbaum2010
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 448 of file bibliografia.bib
- : @article{Pocock1977
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 461 of file bibliografia.bib
- : @article{Benjamini1995
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 470 of file bibliografia.bib
- : @article{Holm1979
- :                  ,
-I'm skipping whatever remains of this entry
-I was expecting an "="---line 535 of file bibliografia.bib
- : 
- : @InCollection{Von_Stengel_2002,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Too many commas in name 1 of "David W. Hosmer, Jr., Stanley Lemeshow, Rodney X. Sturdivant" for entry Hosmer2013
-while executing---line 1100 of file bibliografia_styl.bst
-Name 1 in "Alan L. Montgomery, Peter S. Fader, and Sha Yang" has a comma at the end for entry Montgomery2008
-while executing---line 1100 of file bibliografia_styl.bst
-Warning--to sort, need author or key in Harsanyi1967
-Warning--to sort, need author or key in Aumann1974
-Warning--to sort, need author or key in Aumann1987
-Warning--to sort, need author, editor, or key in Fudenberg1991
-Warning--to sort, need author or key in Lai1985
-Warning--to sort, need author or key in Wald1950
-Warning--to sort, need author, editor, or key in Lehmann1998
-Warning--to sort, need author, editor, or key in Miettinen1999
-Warning--empty author in Harsanyi1967
-Warning--empty title in Harsanyi1967
-Warning--empty journal in Harsanyi1967
-Warning--empty author in Aumann1974
-Warning--empty title in Aumann1974
-Warning--empty journal in Aumann1974
-Warning--empty author in Aumann1987
-Warning--empty title in Aumann1987
-Warning--empty journal in Aumann1987
-Warning--empty author and editor in Fudenberg1991
-Warning--empty title in Fudenberg1991
-Warning--empty publisher in Fudenberg1991
-Warning--empty year in Fudenberg1991
-Warning--empty author in Lai1985
-Warning--empty title in Lai1985
-Warning--empty journal in Lai1985
-Warning--empty author in Wald1950
-Warning--empty title in Wald1950
-Warning--empty journal in Wald1950
-Warning--empty author and editor in Lehmann1998
-Warning--empty title in Lehmann1998
-Warning--empty publisher in Lehmann1998
-Warning--empty year in Lehmann1998
-Warning--empty author and editor in Miettinen1999
-Warning--empty title in Miettinen1999
-Warning--empty publisher in Miettinen1999
-Warning--empty year in Miettinen1999
-Name 1 in "Alan L. Montgomery, Peter S. Fader, and Sha Yang" has a comma at the end for entry Montgomery2008
-while executing---line 1141 of file bibliografia_styl.bst
-Too many commas in name 1 of "David W. Hosmer, Jr., Stanley Lemeshow, Rodney X. Sturdivant" for entry Hosmer2013
-while executing---line 1141 of file bibliografia_styl.bst
-You've used 31 entries,
+Warning--empty journal in nash1950non
+You've used 23 entries,
             2253 wiz_defined-function locations,
-            703 strings with 7326 characters,
-and the built_in function-call counts, 7747 in all, are:
-= -- 700
-> -- 259
+            678 strings with 7134 characters,
+and the built_in function-call counts, 6765 in all, are:
+= -- 664
+> -- 246
 < -- 0
-+ -- 115
-- -- 82
-* -- 597
-:= -- 1205
-add.period$ -- 77
-call.type$ -- 31
-change.case$ -- 120
++ -- 106
+- -- 80
+* -- 486
+:= -- 1103
+add.period$ -- 68
+call.type$ -- 23
+change.case$ -- 101
 chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 336
-empty$ -- 730
-format.name$ -- 82
-if$ -- 1623
+cite$ -- 24
+duplicate$ -- 267
+empty$ -- 598
+format.name$ -- 80
+if$ -- 1415
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 41
-newline$ -- 142
+int.to.str$ -- 23
+missing$ -- 31
+newline$ -- 117
 num.names$ -- 46
-pop$ -- 197
+pop$ -- 120
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 85
 quote$ -- 0
-skip$ -- 182
+skip$ -- 160
 stack$ -- 0
-substring$ -- 429
-swap$ -- 54
+substring$ -- 449
+swap$ -- 63
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 98
-warning$ -- 35
-while$ -- 61
-width$ -- 33
-write$ -- 271
-(There were 15 error messages)
+type$ -- 76
+warning$ -- 1
+while$ -- 74
+width$ -- 25
+write$ -- 233
+(There was 1 warning)

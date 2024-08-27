@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.15)  12 JAN 2023 20:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.15)  27 AUG 2024 22:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -825,9 +825,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language64). Reported on input line 105.
+(babel)             (\language27). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language64). Reported on input line 108.
+(babel)             (\language27). Reported on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-polish/polish.ldf
 Language: polish 2005/03/31 v1.2l Polish support from the babel system
@@ -1452,7 +1452,7 @@ xmf-dist/fonts/type1/public/pl/plr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/pl/plr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/pls
 y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy7.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/pl/plsy8.pfb>
-Output written on Praca_dyplomowa.pdf (41 pages, 644793 bytes).
+Output written on Praca_dyplomowa.pdf (41 pages, 644796 bytes).
 PDF statistics:
  1103 PDF objects out of 1200 (max. 8388607)
  688 compressed objects within 7 object streams

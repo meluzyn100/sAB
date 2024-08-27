@@ -1,39 +1,20 @@
 \begin{thebibliography}{10}
 
-\bibitem{Harsanyi1967}
-
+\bibitem{agresti2012}
+{\sc Agresti, A.}
+\newblock {\em Categorical data analysis}, vol.~792.
+\newblock John Wiley \& Sons, 2012.
 
 \bibitem{Aumann1974}
-
+{\sc Aumann, R.~J.}
+\newblock Subjectivity and correlation in randomized strategies.
+\newblock {\em Journal of mathematical Economics 1}, 1 (1974), 67--96.
 
 \bibitem{Aumann1987}
-
-
-\bibitem{Fudenberg1991}
-
-
-\bibitem{Lai1985}
-
-
-\bibitem{Wald1950}
-
-
-\bibitem{Lehmann1998}
-
-
-\bibitem{Miettinen1999}
-
-
-\bibitem{Agresti2002}
-{\sc Agresti, A.}
-\newblock {\em Categorical Data Analysis}, 2nd~ed.
-\newblock Wiley, 2002.
-
-\bibitem{Montgomery2008}
-{\sc Alan L.~Montgomery, P. S.~F., Yang, S.}
-\newblock Temporal randomization and its application to online controlled
-  experiments.
-\newblock {\em Journal of Marketing Research 45}, 1 (2008), 312--326.
+{\sc Aumann, R.~J.}
+\newblock Correlated equilibrium as an expression of bayesian rationality.
+\newblock {\em Econometrica: Journal of the Econometric Society\/} (1987),
+  1--18.
 
 \bibitem{Benjamini1995}
 {\sc Benjamini, Y., Hochberg, Y.}
@@ -44,74 +25,72 @@
 
 \bibitem{Berger1985}
 {\sc Berger, J.~O.}
-\newblock {\em Statistical Decision Theory and Bayesian Analysis}.
-\newblock Springer, 1985.
+\newblock {\em Statistical decision theory and Bayesian analysis}.
+\newblock Springer Science \& Business Media, 2013.
 
-\bibitem{Box2015}
-{\sc Box, G.~E., Jenkins, G.~M., Reinsel, G.~C., Ljung, G.~M.}
-\newblock {\em Time Series Analysis: Forecasting and Control}, 5th~ed.
-\newblock Wiley, 2015.
-
-\bibitem{Button2013}
-{\sc Button, K.~S., Ioannidis, J.~P., Mokrysz, C., Nosek, B.~A., Flint, J.,
-  Robinson, E.~S., Munafò, M.~R.}
-\newblock Power failure: why small sample size undermines the reliability of
-  neuroscience.
-\newblock {\em Nature Reviews Neuroscience 14}, 5 (2013), 365--376.
-
-\bibitem{Cohen1988}
+\bibitem{cohen2013}
 {\sc Cohen, J.}
-\newblock {\em Statistical Power Analysis for the Behavioral Sciences}.
-\newblock Lawrence Erlbaum Associates, Hillsdale, NJ, 1988.
-
-\bibitem{Hosmer2013}
-{\sc David W.~Hosmer, Jr., S. L. R. X.~S.}
-\newblock {\em Applied Logistic Regression}, 3rd~ed.
-\newblock Wiley, 2013.
+\newblock {\em Statistical power analysis for the behavioral sciences}.
+\newblock routledge, 2013.
 
 \bibitem{DeMets1994}
-{\sc DeMets, D.~L., Lan, K. K.~G.}
-\newblock Interim analysis: The alpha spending function approach.
-\newblock {\em Statistics in Medicine 13}, 13-14 (1994), 1341--1352.
+{\sc Demets, D.~L., Lan, K.~G.}
+\newblock Interim analysis: the alpha spending function approach.
+\newblock {\em Statistics in medicine 13}, 13-14 (1994), 1341--1352.
 
-\bibitem{Fisher1925}
-{\sc Fisher, R.~A.}
-\newblock {\em Statistical Methods for Research Workers}.
-\newblock Oliver and Boyd, Edinburgh, 1925.
+\bibitem{Harsanyi1967}
+{\sc Harsanyi, J.~C.}
+\newblock Games with incomplete information played by “bayesian” players,
+  i--iii part i. the basic model.
+\newblock {\em Management science 14}, 3 (1967), 159--182.
+
+\bibitem{Hollander2013}
+{\sc Hollander, M., Wolfe, D.~A., Chicken, E.}
+\newblock {\em Nonparametric Statistical Methods}, 3rd~ed.
+\newblock John Wiley \& Sons, 2013.
 
 \bibitem{Holm1979}
 {\sc Holm, S.}
 \newblock A simple sequentially rejective multiple test procedure.
 \newblock {\em Scandinavian Journal of Statistics 6}, 2 (1979), 65--70.
 
-\bibitem{Kohavi2007}
-{\sc Kohavi, R., Longbotham, R., Sommerfield, D., Henne, R.}
-\newblock Practical guide to controlled experiments on the web: Listen to your
-  customers not to the hippo.
-\newblock In {\em Proceedings of the 13th ACM SIGKDD International Conference
-  on Knowledge Discovery and Data Mining (KDD)\/} (2007), ACM, pp.~959--967.
+\bibitem{ju2019sequential}
+{\sc Ju, N., Hu, D., Henderson, A., Hong, L.}
+\newblock A sequential test for selecting the better variant: Online a/b
+  testing, adaptive allocation, and continuous monitoring.
+\newblock In {\em Proceedings of the Twelfth ACM International Conference on
+  Web Search and Data Mining\/} (2019), pp.~492--500.
 
 \bibitem{Kohavi2013}
-{\sc Kohavi, R., Tang, D., Xu, Y.}
+{\sc Kohavi, R., Deng, A., Frasca, B., Walker, T., Xu, Y., Pohlmann, N.}
 \newblock Online controlled experiments at large scale.
-\newblock {\em Proceedings of the 19th ACM SIGKDD International Conference on
-  Knowledge Discovery and Data Mining (KDD)\/} (2013), 1168--1176.
+\newblock In {\em Proceedings of the 19th ACM SIGKDD international conference
+  on Knowledge discovery and data mining\/} (2013), pp.~1168--1176.
 
-\bibitem{Hollander2013}
-{\sc Myles~Hollander, Douglas A.~Wolfe, E.~C.}
-\newblock {\em Nonparametric Statistical Methods}.
-\newblock Wiley, 2013.
+\bibitem{Lai1985}
+{\sc Lai, T.~L., Robbins, H.}
+\newblock Asymptotically efficient adaptive allocation rules.
+\newblock {\em Advances in applied mathematics 6}, 1 (1985), 4--22.
 
-\bibitem{Nash1951}
-{\sc Nash, J.~F.}
+\bibitem{lehmann2006theory}
+{\sc Lehmann, E.~L., Casella, G.}
+\newblock {\em Theory of point estimation}.
+\newblock Springer Science \& Business Media, 2006.
+
+\bibitem{Miettinen1999}
+{\sc Miettinen, K.}
+\newblock {\em Nonlinear multiobjective optimization}, vol.~12.
+\newblock Springer Science \& Business Media, 1999.
+
+\bibitem{nash1950non}
+{\sc Nash, J.~F., et~al.}
 \newblock Non-cooperative games.
-\newblock {\em The Annals of Mathematics 54}, 2 (1951), 286--295.
 
 \bibitem{Newcombe1998}
 {\sc Newcombe, R.~G.}
-\newblock Two-sided confidence intervals for the single proportion: Comparison
+\newblock Two-sided confidence intervals for the single proportion: comparison
   of seven methods.
-\newblock {\em Statistics in Medicine 17}, 8 (1998), 857--872.
+\newblock {\em Statistics in medicine 17}, 8 (1998), 857--872.
 
 \bibitem{Pocock1977}
 {\sc Pocock, S.~J.}
@@ -119,35 +98,29 @@
   trials.
 \newblock {\em Biometrika 64}, 2 (1977), 191--199.
 
-\bibitem{Rice2006}
-{\sc Rice, J.~A.}
-\newblock {\em Mathematical Statistics and Data Analysis}, 3rd~ed.
-\newblock Cengage Learning, 2006.
-
-\bibitem{Rosenbaum2010}
-{\sc Rosenbaum, P.~R.}
-\newblock {\em Design of Observational Studies}.
-\newblock Springer, 2010.
-
-\bibitem{Scott2015}
-{\sc Scott, S.~L.}
-\newblock Multi-armed bandit algorithms for the optimal allocation of
-  resources.
-\newblock {\em Journal of Statistical Software 66}, 1 (2015), 1--22.
+\bibitem{rice2007}
+{\sc Rice, J.~A., Rice, J.~A.}
+\newblock {\em Mathematical statistics and data analysis}, vol.~371.
+\newblock Thomson/Brooks/Cole Belmont, CA, 2007.
 
 \bibitem{Student1908}
 {\sc Student}.
 \newblock The probable error of a mean.
-\newblock {\em Biometrika 6}, 1 (1908), 1--25.
+\newblock {\em Biometrika\/} (1908), 1--25.
 
-\bibitem{Sullivan2012}
-{\sc Sullivan, G., Feinn, R.}
+\bibitem{sullivan2012}
+{\sc Sullivan, G.~M., Feinn, R.}
 \newblock Using effect size—or why the p value is not enough.
-\newblock {\em Journal of Graduate Medical Education 4}, 3 (2012), 279--282.
+\newblock {\em Journal of graduate medical education 4}, 3 (2012), 279--282.
 
-\bibitem{Wald1947}
+\bibitem{wald1949statistical}
 {\sc Wald, A.}
-\newblock {\em Sequential Analysis}.
-\newblock Wiley, 1947.
+\newblock Statistical decision functions.
+\newblock {\em The Annals of Mathematical Statistics\/} (1949), 165--205.
+
+\bibitem{wald2004sequential}
+{\sc Wald, A.}
+\newblock {\em Sequential analysis}.
+\newblock Courier Corporation, 2004.
 
 \end{thebibliography}

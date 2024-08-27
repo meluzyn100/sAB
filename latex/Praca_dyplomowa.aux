@@ -26,183 +26,181 @@
 \@writefile{toc}{\contentsline {chapter}{Introduction}{3}{chapter*.2}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\citation{Kohavi2007}
-\citation{Fisher1925}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Concepts, Theorems, and Literature in A/B Testing}{5}{chapter.1}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:Testing}{{1}{5}{Concepts, Theorems, and Literature in A/B Testing}{chapter.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Classical A/B Testing}{5}{section.1.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}Theoretical Foundations}{5}{subsection.1.1.1}\protected@file@percent }
-\citation{Rice2006}
+\citation{rice2007}
 \citation{Student1908}
-\citation{Kohavi2013}
-\citation{Cohen1988}
-\citation{Sullivan2012}
-\citation{Cohen1988}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}Practical Considerations}{6}{subsection.1.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}Power Analysis}{6}{subsection.1.1.3}\protected@file@percent }
-\citation{Button2013}
+\@writefile{toc}{\contentsline {paragraph}{Power Analysis}{6}{section*.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Power curve for a two-sample t-test at a significance level of $\alpha = 0.05$. The~curve illustrates the relationship between the effect size $\Delta $ and the power of the test for various sample sizes.\relax }}{6}{figure.caption.4}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:power_curve}{{1.1}{6}{Power curve for a two-sample t-test at a significance level of $\alpha = 0.05$. The~curve illustrates the relationship between the effect size $\Delta $ and the power of the test for various sample sizes.\relax }{figure.caption.4}{}}
 \citation{Benjamini1995}
 \citation{Holm1979}
 \citation{Hollander2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Power curve for a two-sample t-test at significance level $\alpha = 0.05$. The curve illustrates the relationship between the effect size $\Delta $ and the power of the test for various sample sizes.\relax }}{7}{figure.caption.3}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:power_curve}{{1.1}{7}{Power curve for a two-sample t-test at significance level $\alpha = 0.05$. The curve illustrates the relationship between the effect size $\Delta $ and the power of the test for various sample sizes.\relax }{figure.caption.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.4}Extensions and Variations in A/B Testing}{7}{subsection.1.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Testing with Binary Random Variables}{7}{section*.4}\protected@file@percent }
-\citation{Agresti2002}
+\citation{agresti2012}
+\@writefile{toc}{\contentsline {paragraph}{Extensions and Variations in A/B Testing}{7}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}Testing with Binary Random Variables}{7}{subsection.1.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Chi-Square Test for Two Independent Groups}{7}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Z-Test for Proportions}{7}{section*.7}\protected@file@percent }
+\newlabel{eqn:Z_statistic}{{1.1}{7}{Z-Test for Proportions}{equation.1.1.1}{}}
 \citation{Newcombe1998}
-\@writefile{toc}{\contentsline {paragraph}{Chi-Square Test for Two Independent Groups:}{8}{section*.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Z-Test for Proportions:}{8}{section*.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Logistic Regression:}{8}{section*.7}\protected@file@percent }
-\citation{Hosmer2013}
 \citation{Kohavi2013}
+\citation{cohen2013}
+\citation{sullivan2012}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}Practical Considerations}{8}{subsection.1.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Sample Size for Bernoulli Distributions}{8}{section*.8}\protected@file@percent }
+\newlabel{lem:sample_size}{{1.1}{8}{Sample Size for Bernoulli Distributions}{theorem.1.1}{}}
 \citation{Pocock1977}
-\citation{Pocock1977}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.5}Conclusion}{9}{subsection.1.1.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Issues with Classical A/B Testing}{9}{section.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}Peeking and Its Consequences}{9}{subsection.1.2.1}\protected@file@percent }
 \citation{DeMets1994}
 \citation{Holm1979}
 \citation{Benjamini1995}
 \citation{Pocock1977}
-\citation{Rosenbaum2010}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}Multiple Comparisons and False Discoveries}{10}{subsection.1.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}Time-Varying Effects and External Influences}{10}{subsection.1.2.3}\protected@file@percent }
-\citation{Box2015}
-\citation{Scott2015}
-\citation{Montgomery2008}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.4}Conclusion}{11}{subsection.1.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}Theoretical Foundations: Game Theory and Decision Functions}{11}{section.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Game Theory and Decision Functions}{10}{section.1.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Game Theory}{11}{subsection.1.3.1}\protected@file@percent }
-\citation{Nash1951}
-\@writefile{toc}{\contentsline {subsubsection}{Fundamental Concepts in Game Theory}{12}{section*.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Types of Games and Their Application to A/B Testing}{12}{section*.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Cooperative vs. Non-Cooperative Games}{12}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Fundamental Concepts in Game Theory}{11}{section*.9}\protected@file@percent }
+\citation{nash1950non}
 \citation{Harsanyi1967}
+\@writefile{toc}{\contentsline {subsubsection}{Types of Games and Their Application to A/B Testing}{12}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Cooperative vs. Non-Cooperative Games}{12}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Static vs. Dynamic Games}{12}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Complete vs. Incomplete Information Games}{12}{section*.13}\protected@file@percent }
 \citation{Aumann1974}
 \citation{Aumann1987}
-\citation{Fudenberg1991}
-\@writefile{toc}{\contentsline {paragraph}{Static vs. Dynamic Games}{13}{section*.11}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Complete vs. Incomplete Information Games}{13}{section*.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Advanced Concepts in Game Theory Applied to A/B Testing}{13}{section*.13}\protected@file@percent }
 \citation{Lai1985}
-\@writefile{toc}{\contentsline {subsubsection}{Application of Game Theory to Real-World A/B Testing Scenarios}{14}{section*.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Stakeholder Interaction and Conflict Resolution}{14}{section*.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{User Behavior and Strategic Interaction}{14}{section*.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Dynamic and Adaptive Testing Strategies}{14}{section*.17}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Conclusion}{15}{subsection.1.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.3}Decision Functions in Statistical Decision Theory}{15}{subsection.1.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Basic Definitions and Concepts}{15}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Game Theory Applied to A/B Testing}{13}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Application of Game Theory to Real-World A/B Testing Scenarios}{13}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Stakeholder Interaction and Conflict Resolution}{13}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{User Behavior and Strategic Interaction}{14}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Dynamic and Adaptive Testing Strategies}{14}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Decision Functions in Statistical Decision Theory}{14}{subsection.1.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Basic Definitions and Concepts}{14}{section*.19}\protected@file@percent }
 \citation{Berger1985}
-\citation{Wald1950}
-\citation{Lehmann1998}
-\@writefile{toc}{\contentsline {subsubsection}{Optimality Criteria in Decision Functions}{16}{section*.19}\protected@file@percent }
+\citation{wald1949statistical}
+\citation{lehmann2006theory}
 \citation{Miettinen1999}
-\@writefile{toc}{\contentsline {subsubsection}{Examples of Decision Functions in A/B Testing}{17}{section*.20}\protected@file@percent }
-\citation{Wald1947}
-\@writefile{toc}{\contentsline {subsubsection}{Decision Functions in the Context of Loss Functions}{18}{section*.21}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.4}Conclusion}{19}{subsection.1.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.4}Sequential A/B Testing Methods}{19}{section.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}Theoretical Foundations of Sequential A/B Testing}{19}{subsection.1.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Hypothesis Formulation}{19}{section*.22}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Sequential Probability Ratio Test (SPRT)}{20}{section*.23}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Likelihood Ratio}{20}{section*.24}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Decision Rule}{20}{section*.25}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Expected Sample Size}{20}{section*.26}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Mixture Sequential Probability Ratio Test (mSPRT)}{21}{section*.27}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Mixture Likelihood Ratio}{21}{section*.28}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Decision Rule}{21}{section*.29}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Bayesian Connection}{21}{section*.30}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Visualization: Likelihood Surface of mSPRT}{21}{section*.31}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Stopping Rules and Error Control}{22}{section*.32}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Theoretical Foundations}{22}{section*.33}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Decision Rule}{24}{section*.34}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Applications and Extensions}{24}{section*.35}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.2}Practical Considerations in Sequential A/B Testing}{24}{subsection.1.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Optimality Criteria in Decision Functions}{15}{section*.20}\protected@file@percent }
+\citation{wald2004sequential}
+\@writefile{toc}{\contentsline {subsubsection}{Examples of Decision Functions in A/B Testing}{16}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Decision Functions in the Context of Loss Functions}{16}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Sequential A/B Testing Methods}{17}{section.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}Theoretical Foundations of Sequential A/B Testing}{17}{subsection.1.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Hypothesis Formulation}{17}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Sequential Probability Ratio Test (SPRT)}{18}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Likelihood Ratio}{18}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Mixture Sequential Probability Ratio Test (mSPRT)}{18}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Mixture Likelihood Ratio}{18}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Decision Rule}{19}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Bayesian Connection}{19}{section*.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Stopping Rules and Error Control}{19}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Theoretical Foundations}{19}{section*.31}\protected@file@percent }
+\newlabel{eqn:normal_prts}{{1.3}{20}{Normally Distributed Data with Equal Variances and Different Means}{equation.1.4.3}{}}
+\newlabel{eqn:binomial_prts}{{1.4}{20}{Bernoulli Distributed Data with Different Success Probabilities}{equation.1.4.4}{}}
+\newlabel{fig:bernoulli_deviance}{{1.2a}{21}{Bernoulli distribution.\relax }{figure.caption.32}{}}
+\newlabel{sub@fig:bernoulli_deviance}{{a}{21}{Bernoulli distribution.\relax }{figure.caption.32}{}}
+\newlabel{fig:normal_deviance}{{1.2b}{21}{Normal distribution with unit Variance.\relax }{figure.caption.32}{}}
+\newlabel{sub@fig:normal_deviance}{{b}{21}{Normal distribution with unit Variance.\relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Visualization of the deviance measure for different values of \(\delta \).\relax }}{21}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:deviance}{{1.2}{21}{Visualization of the deviance measure for different values of \(\delta \).\relax }{figure.caption.32}{}}
+\citation{ju2019sequential}
+\@writefile{toc}{\contentsline {paragraph}{Decision Rule}{22}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Applications and Extensions}{22}{section*.34}\protected@file@percent }
 \citation{DeMets1994}
-\citation{Montgomery2008}
-\@writefile{toc}{\contentsline {subsubsection}{Statistical Integrity and Error Control}{25}{section*.36}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Managing Type I and Type II Errors}{25}{section*.37}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Infrastructure and Logistical Considerations}{25}{section*.38}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Infrastructure Requirements}{25}{section*.39}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.3}Conclusion}{25}{subsection.1.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Simulations: Bernoulli Distribution}{27}{chapter.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.2}Practical Considerations in Sequential A/B Testing}{23}{subsection.1.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Statistical Integrity and Error Control}{23}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Managing Type I and Type II Errors}{23}{section*.36}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Infrastructure and Logistical Considerations}{23}{section*.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Infrastructure Requirements}{23}{section*.38}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Simulations}{25}{chapter.2}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:bernoulli_simulations}{{2}{27}{Simulations: Bernoulli Distribution}{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{27}{section.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Simulation Setup}{27}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Bernoulli Distribution}{27}{subsection.2.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Simulation Parameters}{27}{subsection.2.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Simulations}{28}{section.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Example Simulation Trajectories}{28}{subsection.2.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Trajectory Visualization for Different Scenarios}{28}{section*.40}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Simulation Parameters}{28}{section*.41}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Example Trajectories}{28}{section*.42}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{True Null Hypothesis:}{28}{section*.43}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Trajectory of log-likelihood ratio under the true null hypothesis. The log-likelihood ratio remains near zero, indicating no significant difference between the groups.\relax }}{28}{figure.caption.44}\protected@file@percent }
-\newlabel{fig:null_hypothesis_trajectory}{{2.1}{28}{Trajectory of log-likelihood ratio under the true null hypothesis. The log-likelihood ratio remains near zero, indicating no significant difference between the groups.\relax }{figure.caption.44}{}}
-\@writefile{toc}{\contentsline {paragraph}{True Alternative Hypothesis:}{29}{section*.45}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Trajectory of log-likelihood ratio under the true alternative hypothesis. The log-likelihood ratio trends towards the upper threshold, leading to the rejection of the null hypothesis.\relax }}{29}{figure.caption.46}\protected@file@percent }
-\newlabel{fig:alternative_hypothesis_trajectory}{{2.2}{29}{Trajectory of log-likelihood ratio under the true alternative hypothesis. The log-likelihood ratio trends towards the upper threshold, leading to the rejection of the null hypothesis.\relax }{figure.caption.46}{}}
-\@writefile{toc}{\contentsline {paragraph}{Sequential Analysis with Early Stopping:}{29}{section*.47}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Trajectory of log-likelihood ratio with early stopping. The test reaches a decision point early, highlighting the efficiency of sequential analysis.\relax }}{29}{figure.caption.48}\protected@file@percent }
-\newlabel{fig:early_stopping_trajectory}{{2.3}{29}{Trajectory of log-likelihood ratio with early stopping. The test reaches a decision point early, highlighting the efficiency of sequential analysis.\relax }{figure.caption.48}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Analysis of Simulation Results}{29}{section*.49}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Conclusion}{29}{section*.50}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Simulation Scenarios}{29}{section.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Scenario 1: No Difference in Success Probabilities}{29}{subsection.2.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Simulation Results}{29}{section*.51}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Scenario 1: Distribution of p-values under \( H_0: p_A = p_B = 0.5 \). The Type I error rate should approximate the significance level \( \alpha \).\relax }}{30}{figure.caption.52}\protected@file@percent }
-\newlabel{fig:scenario1}{{2.4}{30}{Scenario 1: Distribution of p-values under \( H_0: p_A = p_B = 0.5 \). The Type I error rate should approximate the significance level \( \alpha \).\relax }{figure.caption.52}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Scenario 2: Small Effect Size}{30}{subsection.2.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Simulation Results}{30}{section*.53}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Scenario 2: Power curve for detecting a small effect size (\( \Delta = 0.05 \)). The power increases with the sample size, demonstrating the sensitivity of the test.\relax }}{30}{figure.caption.54}\protected@file@percent }
-\newlabel{fig:scenario2}{{2.5}{30}{Scenario 2: Power curve for detecting a small effect size (\( \Delta = 0.05 \)). The power increases with the sample size, demonstrating the sensitivity of the test.\relax }{figure.caption.54}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Scenario 3: Sequential Analysis with Stopping Rules}{30}{subsection.2.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Simulation Results}{30}{section*.55}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Scenario 3: Distribution of stopping times in a sequential A/B test. The test often stops early, reducing the average sample size needed to reach a decision.\relax }}{30}{figure.caption.56}\protected@file@percent }
-\newlabel{fig:scenario3}{{2.6}{30}{Scenario 3: Distribution of stopping times in a sequential A/B test. The test often stops early, reducing the average sample size needed to reach a decision.\relax }{figure.caption.56}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}Scenario 4: Average Stopping Time in Sequential A/B Testing}{31}{subsection.2.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Simulation Setup}{31}{section*.57}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Simulation Procedure}{31}{section*.58}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Simulation Results}{31}{section*.59}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Average stopping time \( \mathbb  {E}[T] \) as a function of effect size \( \Delta \) for different sample sizes. The results show that larger effect sizes lead to quicker decisions, reducing the average number of observations needed.\relax }}{31}{figure.caption.60}\protected@file@percent }
-\newlabel{fig:avg_stopping_time}{{2.7}{31}{Average stopping time \( \mathbb {E}[T] \) as a function of effect size \( \Delta \) for different sample sizes. The results show that larger effect sizes lead to quicker decisions, reducing the average number of observations needed.\relax }{figure.caption.60}{}}
+\newlabel{ch:Simulations}{{2}{25}{Simulations}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Example Trajectories}{25}{section.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Simulation Setup}{25}{subsection.2.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Trajectory Simulations}{25}{subsection.2.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Cumulative means for two groups: Group A with \( p_A = 0.5 \) and Group B with \( p_B = 0.4 \). Each line represents an individual simulation, while the darker lines denote the average trajectory across multiple simulations.\relax }}{26}{figure.caption.39}\protected@file@percent }
+\newlabel{fig:cumulative_means}{{2.1}{26}{Cumulative means for two groups: Group A with \( p_A = 0.5 \) and Group B with \( p_B = 0.4 \). Each line represents an individual simulation, while the darker lines denote the average trajectory across multiple simulations.\relax }{figure.caption.39}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Log-Likelihood Ratio (LLR) trajectories for the same simulation setup. The~average LLR is depicted in black, with upper and lower decision thresholds indicated by~dashed lines. The green lines represent the Law of the Iterated Logarithm (LIL) boundaries, adjusted for sample size, risk tolerance \(\delta \), and distribution variability.\relax }}{26}{figure.caption.40}\protected@file@percent }
+\newlabel{fig:llr_trajectories}{{2.2}{26}{Log-Likelihood Ratio (LLR) trajectories for the same simulation setup. The~average LLR is depicted in black, with upper and lower decision thresholds indicated by~dashed lines. The green lines represent the Law of the Iterated Logarithm (LIL) boundaries, adjusted for sample size, risk tolerance \(\delta \), and distribution variability.\relax }{figure.caption.40}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Average Stopping Time and Error Rate Analysis}{27}{section.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Simulation Setup}{27}{subsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Average Stopping Time}{27}{subsection.2.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Average stopping time as a function of the success probabilities \( p_A \) and \( p_B \). The red dashed lines represent the risk tolerance boundaries, which delineate where the difference between \( p_A \) and \( p_B \) corresponds to the risk level defined by \( \delta \).\relax }}{28}{figure.caption.41}\protected@file@percent }
+\newlabel{fig:avg_stopping_time}{{2.3}{28}{Average stopping time as a function of the success probabilities \( p_A \) and \( p_B \). The red dashed lines represent the risk tolerance boundaries, which delineate where the difference between \( p_A \) and \( p_B \) corresponds to the risk level defined by \( \delta \).\relax }{figure.caption.41}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Error Rate}{28}{subsection.2.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Error rate as a function of the success probabilities \( p_A \) and \( p_B \). Warmer colors indicate higher error rates. The red dashed lines represent the risk tolerance boundaries, indicating where the difference between \( p_A \) and \( p_B \) corresponds to the risk level defined by~\( \delta \).\relax }}{28}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:error_rate}{{2.4}{28}{Error rate as a function of the success probabilities \( p_A \) and \( p_B \). Warmer colors indicate higher error rates. The red dashed lines represent the risk tolerance boundaries, indicating where the difference between \( p_A \) and \( p_B \) corresponds to the risk level defined by~\( \delta \).\relax }{figure.caption.42}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Detailed Analysis for a 50\% Success Probability}{29}{section.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Average Stopping Time}{29}{subsection.2.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Average Stopping Time as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds.\relax }}{29}{figure.caption.43}\protected@file@percent }
+\newlabel{fig:avg_stopping_time_pa05}{{2.5}{29}{Average Stopping Time as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds.\relax }{figure.caption.43}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Error Rate Analysis 1}{30}{subsection.2.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Error Rate as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds, and the blue dashed line represents the significance level.\relax }}{30}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:error_rate_pa05}{{2.6}{30}{Error Rate as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds, and the blue dashed line represents the significance level.\relax }{figure.caption.44}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Descriptive Statistics and Error Rate for Various \( p_B \) Values.\relax }}{31}{table.caption.45}\protected@file@percent }
+\newlabel{tab:descriptive_stats}{{2.1}{31}{Descriptive Statistics and Error Rate for Various \( p_B \) Values.\relax }{table.caption.45}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Detailed Analysis for a 50\% Success Probability 2}{32}{section.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Average Stopping Time as a function of \( p_B \) for \( p_A = 0.5 \). The dashed lines represent the risk tolerance bounds.\relax }}{32}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:avg_stopping_time_pa05}{{2.7}{32}{Average Stopping Time as a function of \( p_B \) for \( p_A = 0.5 \). The dashed lines represent the risk tolerance bounds.\relax }{figure.caption.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Error Rate as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds, and the blue dashed line represents the significance level.\relax }}{32}{figure.caption.47}\protected@file@percent }
+\newlabel{fig:error_rate_pa05}{{2.8}{32}{Error Rate as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds, and the blue dashed line represents the significance level.\relax }{figure.caption.47}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Descriptive Statistics and Error Rate\relax }}{33}{table.caption.48}\protected@file@percent }
+\newlabel{tab:descriptive_stats}{{2.2}{33}{Descriptive Statistics and Error Rate\relax }{table.caption.48}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Descriptive Statistics and Error Rate\relax }}{33}{table.caption.49}\protected@file@percent }
+\newlabel{tab:descriptive_stats}{{2.3}{33}{Descriptive Statistics and Error Rate\relax }{table.caption.49}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.4}{\ignorespaces Descriptive Statistics and Error Rate\relax }}{33}{table.caption.50}\protected@file@percent }
+\newlabel{tab:descriptive_stats}{{2.4}{33}{Descriptive Statistics and Error Rate\relax }{table.caption.50}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Detailed Analysis for a 50\% Success Probability 2}{34}{section.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Average Stopping Time Analysis}{34}{subsection.2.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Average Stopping Time as a function of \( p_B \) for \( p_A = 0.5 \). The dashed lines represent the risk tolerance bounds.\relax }}{34}{figure.caption.51}\protected@file@percent }
+\newlabel{fig:avg_stopping_time_pa05}{{2.9}{34}{Average Stopping Time as a function of \( p_B \) for \( p_A = 0.5 \). The dashed lines represent the risk tolerance bounds.\relax }{figure.caption.51}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Error Rate Analysis}{35}{subsection.2.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Error Rate as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed line represents the significance level, and the colored dashed lines represent the risk tolerance bounds for different deltas.\relax }}{35}{figure.caption.52}\protected@file@percent }
+\newlabel{fig:error_rate_pa05}{{2.10}{35}{Error Rate as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed line represents the significance level, and the colored dashed lines represent the risk tolerance bounds for different deltas.\relax }{figure.caption.52}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Descriptive Statistics}{35}{subsection.2.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.4}Summary}{36}{subsection.2.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Summary}{37}{chapter*.53}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{Appendix}{39}{chapter*.54}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{Appendix}{{2.5.4}{39}{Appendix}{chapter*.54}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Proof of Lemma \ref  {lem:sample_size}}{39}{section.1.1}\protected@file@percent }
+\newlabel{proof:sample_size}{{A.1}{39}{Proof of Lemma \ref {lem:sample_size}}{section.1.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Proof of normal probability ratio test statistic}{40}{section.1.2}\protected@file@percent }
+\newlabel{proof:normal_prts}{{A.2}{40}{Proof of normal probability ratio test statistic}{section.1.2}{}}
 \bibstyle{bibliografia_styl}
 \bibdata{bibliografia}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of Selected Data\relax }}{32}{table.caption.61}\protected@file@percent }
-\newlabel{tab:selected_data_summary}{{2.1}{32}{Summary of Selected Data\relax }{table.caption.61}{}}
-\bibcite{Harsanyi1967}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}Proof of Bernoulli probability ratio test statistic}{41}{section.1.3}\protected@file@percent }
+\newlabel{proof:bernoulli_prts}{{A.3}{41}{Proof of Bernoulli probability ratio test statistic}{section.1.3}{}}
+\bibcite{agresti2012}{1}
 \bibcite{Aumann1974}{2}
 \bibcite{Aumann1987}{3}
-\bibcite{Fudenberg1991}{4}
-\bibcite{Lai1985}{5}
-\bibcite{Wald1950}{6}
-\bibcite{Lehmann1998}{7}
-\bibcite{Miettinen1999}{8}
-\bibcite{Agresti2002}{9}
-\bibcite{Montgomery2008}{10}
-\bibcite{Benjamini1995}{11}
-\bibcite{Berger1985}{12}
-\bibcite{Box2015}{13}
-\bibcite{Button2013}{14}
-\bibcite{Cohen1988}{15}
-\bibcite{Hosmer2013}{16}
-\bibcite{DeMets1994}{17}
-\bibcite{Fisher1925}{18}
-\bibcite{Holm1979}{19}
-\bibcite{Kohavi2007}{20}
-\bibcite{Kohavi2013}{21}
-\bibcite{Hollander2013}{22}
-\bibcite{Nash1951}{23}
-\bibcite{Newcombe1998}{24}
-\bibcite{Pocock1977}{25}
-\bibcite{Rice2006}{26}
-\bibcite{Rosenbaum2010}{27}
-\bibcite{Scott2015}{28}
-\bibcite{Student1908}{29}
-\bibcite{Sullivan2012}{30}
-\bibcite{Wald1947}{31}
-\gdef \@abspage@last{36}
+\bibcite{Benjamini1995}{4}
+\bibcite{Berger1985}{5}
+\bibcite{cohen2013}{6}
+\bibcite{DeMets1994}{7}
+\bibcite{Harsanyi1967}{8}
+\bibcite{Hollander2013}{9}
+\bibcite{Holm1979}{10}
+\bibcite{ju2019sequential}{11}
+\bibcite{Kohavi2013}{12}
+\bibcite{Lai1985}{13}
+\bibcite{lehmann2006theory}{14}
+\bibcite{Miettinen1999}{15}
+\bibcite{nash1950non}{16}
+\bibcite{Newcombe1998}{17}
+\bibcite{Pocock1977}{18}
+\bibcite{rice2007}{19}
+\bibcite{Student1908}{20}
+\bibcite{sullivan2012}{21}
+\bibcite{wald1949statistical}{22}
+\bibcite{wald2004sequential}{23}
+\gdef \@abspage@last{46}
