@@ -250,7 +250,7 @@
 \tableofcontents
 %\listoffigures
 %\listoftables
-
+%TODO czy \tableofcontents nie jest zbyt haotyczny? 
 {\backmatter \chapter{Introduction}} 
 
 A/B testing is a cornerstone of experimental design, widely applied in fields such as marketing, product development, and clinical research. Traditional A/B testing methods, which rely on fixed sample sizes and decisions made after the complete collection of data, have proven effective in many contexts. However, these methods can be slow and resource-intensive, often requiring large sample sizes and extended periods to reach a conclusion.
@@ -1160,149 +1160,66 @@ As shown in Figure \ref{fig:error_rate}, the error rate peaks when the success p
 
 This analysis underscores the necessity of balancing the trade-offs between the average stopping time and the error rate when designing and interpreting sequential A/B tests. By~understanding these metrics, researchers can make more informed decisions in the context of online experimentation, ensuring efficient use of resources while maintaining rigorous statistical standards.
 
+%\section{Detailed Analysis for a 50\% Success Probability}
+%
+%In this section, we conduct a detailed analysis of the sequential A/B testing performance when the probability of success in Group A is fixed at \( p_A = 0.5 \), and the probability of~success in Group B, \( p_B \), varies. This analysis provides more profound insights into how the sequential test behaves as the success probabilities of the two groups become increasingly similar or dissimilar.
+%
+%\subsection{Average Stopping Time}
+%
+%Figure \ref{fig:avg_stopping_time_pa05} illustrates the relationship between \( p_B \) and the average stopping time of~the sequential test. As expected, the average stopping time increases as \( p_B \) approaches \( p_A = 0.5 \). This is because when the success probabilities of the two groups are close, it becomes more challenging for the test to gather enough evidence to decisively favor one group over the other. Consequently, more samples are required, leading to a longer stopping time.
+%
+%The red dashed lines represent the risk tolerance bounds, indicating the values of~\( p_B \)~where the decision boundaries are most likely to be crossed. Within this range, the test generally requires the maximum number of samples to reach a conclusion.
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{images/average_stopping_time_pa05.png}
+%	\caption{Average Stopping Time as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds.}
+%	\label{fig:avg_stopping_time_pa05}
+%\end{figure}
+%\subsection{Error Rate Analysis 1}
+%Figure \ref{fig:error_rate_pa05} shows the error rate as a function of \( p_B \) when the success probability in~Group A is fixed at \( p_A = 0.5 \). The results indicate that the error rate is minimal when \( p_B \)~is substantially different from \( p_A = 0.5 \). This suggests that the sequential test is highly effective at distinguishing between the two groups when there is a significant difference in~their success probabilities.
+%
+%However, as \( p_B \) approaches \( p_A = 0.5 \), the error rate increases, reaching its peak when \( p_B \) is nearly equal to \( p_A \). This increase in error rate is due to the difficulty of distinguishing between the two groups when their success probabilities are nearly identical. In such cases, the test struggles to accumulate sufficient evidence to confidently reject the null hypothesis, leading to a higher likelihood of errors.
+%
+%The blue dashed line in Figure \ref{fig:error_rate_pa05} represents the significance level \( \alpha = 0.05 \), which is~the maximum acceptable probability of making a Type I error (false positive). Notably,~the error rate exceeds this threshold near the risk tolerance bounds, highlighting the inherent trade-off between sensitivity and specificity in sequential testing. This trade-off must be~carefully managed, especially in scenarios where the cost of errors is high.
+%
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.9\textwidth]{images/error_rate_pa05.png}
+%	\caption{Error Rate as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds, and the blue dashed line represents the significance level.}
+%	\label{fig:error_rate_pa05}
+%\end{figure}
+%
+%To further clarify the behavior of the test, Table \ref{tab:descriptive_stats} provides descriptive statistics for the stopping times across different values of \( p_B \), along with the corresponding error rates. The data reveals that as \( p_B \) approaches \( p_A \), not only does the error rate increase, but the mean stopping time also lengthens, reflecting the increased difficulty in reaching a~conclusive decision.
+%
+%\begin{table}[H]
+%	\centering
+%	\caption{Descriptive Statistics and Error Rate for Various \( p_B \) Values.}
+%	\label{tab:descriptive_stats}
+%	\begin{tabular}{lccccccccc}
+%		\toprule
+%		& \multicolumn{9}{c}{\( \mathbf{p_B} \)} \\ \cmidrule(lr){2-10}
+%		\textbf{Stop time}& 0.1 & 0.2 & 0.3 & 0.4 & 0.45 & 0.47 & 0.48 & 0.49 & 0.495 \\
+%		\midrule
+%		\textbf{Mean} & 37.69 & 50.21 & 75.92 & 149.46 & 269.08 & 355.41 & 398.96 & 426.36 & 441.07 \\
+%		\textbf{Std} & 8.92 & 15.40 & 29.84 & 81.40 & 192.76 & 266.59 & 321.06 & 336.41 & 363.75 \\
+%		\textbf{Min} & 18 & 19 & 22 & 31 & 34 & 33 & 23 & 37 & 44 \\
+%		\textbf{25\%} & 31 & 40 & 55 & 91 & 136 & 167 & 179 & 186 & 192 \\
+%		\textbf{Median} & 37 & 48 & 70 & 130 & 217 & 280 & 298 & 330 & 327 \\
+%		\textbf{75\%} & 43 & 58 & 91 & 188 & 349 & 459 & 529 & 567 & 580 \\
+%		\textbf{Max} & 86 & 122 & 232 & 613 & 1672 & 2143 & 2521 & 2445 & 2615 \\
+%		\hline
+%		\textbf{Error Rate} & 0 & 0 & 0 & 0 & 0.06 & 0.14 & 0.23 & 0.37 & 0.41 \\
+%		\bottomrule
+%	\end{tabular}
+%	\caption*{\textit{Source: own elaboration}}
+%\end{table}
+%
+%The table shows that as \( p_B \) nears \( p_A \), the stopping times become more variable, with the maximum stopping time increasing substantially. This variability highlights the challenges faced by the sequential test in making a decision when the difference between \( p_A \) and \( p_B \) is~minimal. Moreover, the error rate steadily increases as \( p_B \) approaches \( p_A \), emphasizing the importance of understanding the error dynamics when interpreting the results of~sequential A/B tests.
+%
+%This analysis underscores the critical importance of selecting appropriate test parameters and understanding their implications on both stopping times and error rates. As~the success probabilities of the two groups converge, the sequential test requires more data to~reach a decision, and the likelihood of error increases, which must be carefully considered in the design and interpretation of experiments.
+
+
 \section{Detailed Analysis for a 50\% Success Probability}
-
-In this section, we conduct a detailed analysis of the sequential A/B testing performance when the probability of success in Group A is fixed at \( p_A = 0.5 \), and the probability of~success in Group B, \( p_B \), varies. This analysis provides more profound insights into how the sequential test behaves as the success probabilities of the two groups become increasingly similar or dissimilar.
-
-\subsection{Average Stopping Time}
-
-Figure \ref{fig:avg_stopping_time_pa05} illustrates the relationship between \( p_B \) and the average stopping time of~the sequential test. As expected, the average stopping time increases as \( p_B \) approaches \( p_A = 0.5 \). This is because when the success probabilities of the two groups are close, it becomes more challenging for the test to gather enough evidence to decisively favor one group over the other. Consequently, more samples are required, leading to a longer stopping time.
-
-The red dashed lines represent the risk tolerance bounds, indicating the values of~\( p_B \)~where the decision boundaries are most likely to be crossed. Within this range, the test generally requires the maximum number of samples to reach a conclusion.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{images/average_stopping_time_pa05.png}
-	\caption{Average Stopping Time as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds.}
-	\label{fig:avg_stopping_time_pa05}
-\end{figure}
-\subsection{Error Rate Analysis 1}
-Figure \ref{fig:error_rate_pa05} shows the error rate as a function of \( p_B \) when the success probability in~Group A is fixed at \( p_A = 0.5 \). The results indicate that the error rate is minimal when \( p_B \)~is substantially different from \( p_A = 0.5 \). This suggests that the sequential test is highly effective at distinguishing between the two groups when there is a significant difference in~their success probabilities.
-
-However, as \( p_B \) approaches \( p_A = 0.5 \), the error rate increases, reaching its peak when \( p_B \) is nearly equal to \( p_A \). This increase in error rate is due to the difficulty of distinguishing between the two groups when their success probabilities are nearly identical. In such cases, the test struggles to accumulate sufficient evidence to confidently reject the null hypothesis, leading to a higher likelihood of errors.
-
-The blue dashed line in Figure \ref{fig:error_rate_pa05} represents the significance level \( \alpha = 0.05 \), which is~the maximum acceptable probability of making a Type I error (false positive). Notably,~the error rate exceeds this threshold near the risk tolerance bounds, highlighting the inherent trade-off between sensitivity and specificity in sequential testing. This trade-off must be~carefully managed, especially in scenarios where the cost of errors is high.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\textwidth]{images/error_rate_pa05.png}
-	\caption{Error Rate as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds, and the blue dashed line represents the significance level.}
-	\label{fig:error_rate_pa05}
-\end{figure}
-
-To further clarify the behavior of the test, Table \ref{tab:descriptive_stats} provides descriptive statistics for the stopping times across different values of \( p_B \), along with the corresponding error rates. The data reveals that as \( p_B \) approaches \( p_A \), not only does the error rate increase, but the mean stopping time also lengthens, reflecting the increased difficulty in reaching a~conclusive decision.
-
-\begin{table}[H]
-	\centering
-	\caption{Descriptive Statistics and Error Rate for Various \( p_B \) Values.}
-	\label{tab:descriptive_stats}
-	\begin{tabular}{lccccccccc}
-		\toprule
-		& \multicolumn{9}{c}{\( \mathbf{p_B} \)} \\ \cmidrule(lr){2-10}
-		\textbf{Stop time}& 0.1 & 0.2 & 0.3 & 0.4 & 0.45 & 0.47 & 0.48 & 0.49 & 0.495 \\
-		\midrule
-		\textbf{Mean} & 37.69 & 50.21 & 75.92 & 149.46 & 269.08 & 355.41 & 398.96 & 426.36 & 441.07 \\
-		\textbf{Std} & 8.92 & 15.40 & 29.84 & 81.40 & 192.76 & 266.59 & 321.06 & 336.41 & 363.75 \\
-		\textbf{Min} & 18 & 19 & 22 & 31 & 34 & 33 & 23 & 37 & 44 \\
-		\textbf{25\%} & 31 & 40 & 55 & 91 & 136 & 167 & 179 & 186 & 192 \\
-		\textbf{Median} & 37 & 48 & 70 & 130 & 217 & 280 & 298 & 330 & 327 \\
-		\textbf{75\%} & 43 & 58 & 91 & 188 & 349 & 459 & 529 & 567 & 580 \\
-		\textbf{Max} & 86 & 122 & 232 & 613 & 1672 & 2143 & 2521 & 2445 & 2615 \\
-		\hline
-		\textbf{Error Rate} & 0 & 0 & 0 & 0 & 0.06 & 0.14 & 0.23 & 0.37 & 0.41 \\
-		\bottomrule
-	\end{tabular}
-	\caption*{\textit{Source: own elaboration}}
-\end{table}
-
-The table shows that as \( p_B \) nears \( p_A \), the stopping times become more variable, with the maximum stopping time increasing substantially. This variability highlights the challenges faced by the sequential test in making a decision when the difference between \( p_A \) and \( p_B \) is~minimal. Moreover, the error rate steadily increases as \( p_B \) approaches \( p_A \), emphasizing the importance of understanding the error dynamics when interpreting the results of~sequential A/B tests.
-
-This analysis underscores the critical importance of selecting appropriate test parameters and understanding their implications on both stopping times and error rates. As~the success probabilities of the two groups converge, the sequential test requires more data to~reach a decision, and the likelihood of error increases, which must be carefully considered in the design and interpretation of experiments.
-
-\section{Detailed Analysis for a 50\% Success Probability 2}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{images/delta_average_stopping_time.png}
-	\caption{Average Stopping Time as a function of \( p_B \) for \( p_A = 0.5 \). The dashed lines represent the risk tolerance bounds.}
-	\label{fig:avg_stopping_time_pa05}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{images/delta_error_rate.png}
-	\caption{Error Rate as a function of \( p_B \) for \( p_A = 0.5 \). The red dashed lines represent the risk tolerance bounds, and the blue dashed line represents the significance level.}
-	\label{fig:error_rate_pa05}
-\end{figure}
-
-
-\begin{table}
-	\centering
-	\caption{Descriptive Statistics and Error Rate}
-	\label{tab:descriptive_stats}
-	\begin{tabular}{llcccccccc}
-		\toprule
-		& \multicolumn{8}{c}{$p_B$} \\ \cmidrule(lr){2-9}
-		& 0.2 & 0.3 & 0.4 & 0.425 & 0.45 & 0.475 & 0.49 & 0.495 \\
-		\midrule
-		\textbf{mean} & 91.40 & 142 & 329.40 & 330.30 & 452.60 & 1225.80 & 1565 & 2056.10 \\
-		\textbf{std} & 14.46 & 37.82 & 116.20 & 118.38 & 131.35 & 697.21 & 1360.89 & 1194.56 \\
-		\textbf{min} & 69 & 95 & 132 & 191 & 312 & 400 & 256 & 724 \\
-		\textbf{25\%} & 86.25 & 108 & 259.75 & 277.50 & 370.25 & 867 & 925.75 & 1132.75 \\
-		\textbf{50\%} & 87.50 & 138 & 315.50 & 307 & 423 & 1101 & 1184 & 1558 \\
-		\textbf{75\%} & 97 & 172.75 & 385.25 & 369.25 & 488.50 & 1231.75 & 1811.75 & 3209.50 \\
-		\textbf{max} & 120 & 196 & 521 & 582 & 773 & 2489 & 5000 & 3710 \\
-		\textbf{Error Rate} & 0 & 0 & 0 & 0 & 0.00 & 0.06 & 0.20 & 0.35 \\
-		\bottomrule
-	\end{tabular}
-\end{table}
-
-\begin{table}
-	\centering
-	\caption{Descriptive Statistics and Error Rate}
-	\label{tab:descriptive_stats}
-	\begin{tabular}{llcccccccc}
-		\toprule
-		& \multicolumn{8}{c}{$p_B$} \\ \cmidrule(lr){2-9}
-		& 0.2 & 0.3 & 0.4 & 0.425 & 0.45 & 0.475 & 0.49 & 0.495 \\
-		\midrule
-		\textbf{mean} & 41.60 & 82.80 & 160.40 & 226.90 & 256 & 356.40 & 323.60 & 347.40 \\
-		\textbf{std} & 11.55 & 24.67 & 122.09 & 141.22 & 94.50 & 143.24 & 280.86 & 232.70 \\
-		\textbf{min} & 25 & 55 & 69 & 108 & 84 & 105 & 97 & 53 \\
-		\textbf{25\%} & 31.75 & 68 & 92 & 149.50 & 187.75 & 308 & 155.50 & 122.50 \\
-		\textbf{50\%} & 41 & 79.50 & 118.50 & 184 & 258 & 345 & 239 & 371.50 \\
-		\textbf{75\%} & 52.50 & 87 & 139.75 & 206.25 & 336 & 413 & 329.25 & 513.25 \\
-		\textbf{max} & 57 & 145 & 432 & 537 & 363 & 590 & 1032 & 705 \\
-		\textbf{Error Rate} & 0 & 0 & 0.00 & 0.01 & 0.04 & 0.18 & 0.35 & 0.41 \\
-		\bottomrule
-	\end{tabular}
-\end{table}
-
-\begin{table}
-	\centering
-	\caption{Descriptive Statistics and Error Rate}
-	\label{tab:descriptive_stats}
-	\begin{tabular}{llcccccccc}
-		\toprule
-		& \multicolumn{8}{c}{$p_B$} \\ \cmidrule(lr){2-9}
-		& 0.2 & 0.3 & 0.4 & 0.425 & 0.45 & 0.475 & 0.49 & 0.495 \\
-		\midrule
-		\textbf{mean} & 34.30 & 38.90 & 129.50 & 112.40 & 204 & 242 & 209.50 & 129.90 \\
-		\textbf{std} & 10.49 & 18.12 & 57.75 & 46.75 & 197.23 & 171.60 & 79.28 & 99.85 \\
-		\textbf{min} & 17 & 18 & 39 & 40 & 49 & 64 & 52 & 29 \\
-		\textbf{25\%} & 28.25 & 29.25 & 81.50 & 71.75 & 87.50 & 142.50 & 177 & 68.50 \\
-		\textbf{50\%} & 33 & 32 & 154 & 130 & 136 & 179.50 & 193 & 96 \\
-		\textbf{75\%} & 40.25 & 51.75 & 174.75 & 149 & 198.75 & 345.25 & 257.75 & 188 \\
-		\textbf{max} & 53 & 68 & 190 & 168 & 672 & 583 & 338 & 349 \\
-		\textbf{Error Rate} & 0 & 0 & 0.01 & 0.07 & 0.12 & 0.29 & 0.40 & 0.45 \\
-		\bottomrule
-	\end{tabular}
-\end{table}
-
-
-
-
-
-\section{Detailed Analysis for a 50\% Success Probability 2}
 
 In this section, we provide a comprehensive analysis of the average stopping time and error rate when the success probability \( p_A \) is fixed at 50\%, while \( p_B \) varies. The analysis incorporates simulations for three different values of the delta parameter: \( \delta = 0.1 \), \( \delta = 0.2 \), and \( \delta = 0.3 \). These delta values represent varying levels of risk tolerance, impacting the speed and accuracy of the sequential A/B testing process.
 
@@ -1315,7 +1232,7 @@ In this section, we provide a comprehensive analysis of the average stopping tim
 	\label{fig:avg_stopping_time_pa05}
 \end{figure}
 
-Figure \ref{fig:avg_stopping_time_pa05} illustrates the average stopping time as a function of \( p_B \) for three different delta values. The plots clearly demonstrate that smaller delta values, such as \( \delta = 0.1 \), result in significantly longer stopping times, especially as \( p_B \) approaches 0.5. This is because a smaller delta value requires stronger evidence to make a decision, leading to more cautious and prolonged testing.
+Figure \ref{fig:avg_stopping_time_pa05} illustrates the average stopping time as a function of \( p_B \) for three different delta values. The plots clearly demonstrate that smaller delta values, such as \( \delta = 0.1 \), result in significantly longer stopping times, especially as \( p_B \) approaches 0.5. This is~because a~smaller delta value requires stronger evidence to make a decision, leading to more cautious and prolonged testing.
 
 As the delta value increases to 0.2 and 0.3, the average stopping time decreases across all values of \( p_B \). This reduction is most noticeable when \( p_B \) is close to \( p_A \), reflecting the faster decision-making process due to the looser decision boundaries. However, this comes at the cost of potentially higher error rates, as discussed in the following section.
 
@@ -1328,25 +1245,86 @@ As the delta value increases to 0.2 and 0.3, the average stopping time decreases
 	\label{fig:error_rate_pa05}
 \end{figure}
 
-Figure \ref{fig:error_rate_pa05} shows the error rate as a function of \( p_B \) for the three delta values. As expected, larger delta values correspond to higher error rates, particularly when \( p_B \) is close to \( p_A = 0.5 \). This is because larger deltas allow for faster decisions with less evidence, increasing the likelihood of making an incorrect decision.
+Figure \ref{fig:error_rate_pa05} shows the error rate as a function of \( p_B \) for the three delta values. As~expected, larger delta values correspond to higher error rates, particularly when \( p_B \) is close to \( p_A = 0.5 \). This is because larger deltas allow for faster decisions with less evidence, increasing the likelihood of making an incorrect decision.
 
-The red dashed line represents the significance level, which provides a baseline for acceptable error rates. For smaller delta values like \( \delta = 0.1 \), the error rate remains below this threshold for most values of \( p_B \), indicating a more conservative and reliable testing approach. However, for \( \delta = 0.3 \), the error rate exceeds this threshold as \( p_B \) approaches 0.5, highlighting the trade-off between speed and accuracy.
+The red dashed line represents the significance level, which provides a baseline for acceptable error rates. For smaller delta values like \( \delta = 0.1 \), the error rate remains below this threshold for most values of \( p_B \), indicating a more conservative and reliable testing approach. However, for \( \delta = 0.3 \), the error rate exceeds this threshold as \( p_B \) approaches 0.5,~highlighting the trade-off between speed and accuracy.
 
 \subsection{Descriptive Statistics}
 
-The tables below provide detailed descriptive statistics for the stopping times and error rates for different \( p_B \) values and delta settings. These statistics offer a granular view of the simulation results, showcasing the distribution of stopping times and the corresponding error rates.
+To provide a deeper understanding of the simulation results, we present detailed descriptive statistics for the stopping times and error rates across different values of \( p_B \) for each delta setting (\( \delta = 0.1 \), \( \delta = 0.2 \), and \( \delta = 0.3 \)). These tables summarize key metrics, including the mean, standard deviation, and quartiles of the stopping times, as well as the corresponding error rates.
 
-- **Table 1** shows statistics for \( \delta = 0.1 \).
-- **Table 2** shows statistics for \( \delta = 0.2 \).
-- **Table 3** shows statistics for \( \delta = 0.3 \).
+\begin{table}[H]
+	\centering
+	\caption{Descriptive Statistics and Error Rate for \( \delta = 0.1 \)}
+	\label{tab:descriptive_stats_delta_01}
+	\begin{tabular}{llcccccccc}
+		\toprule
+		& \multicolumn{8}{c}{$p_B$} \\ \cmidrule(lr){2-9}
+		& 0.2 & 0.3 & 0.4 & 0.425 & 0.45 & 0.475 & 0.49 & 0.495 \\
+		\midrule
+		\textbf{mean} & 91.40 & 142.00 & 329.40 & 330.30 & 452.60 & 1225.80 & 1565.00 & 2056.10 \\
+		\textbf{std} & 14.46 & 37.82 & 116.20 & 118.38 & 131.35 & 697.21 & 1360.89 & 1194.56 \\
+		\textbf{min} & 69.00 & 95.00 & 132.00 & 191.00 & 312.00 & 400.00 & 256.00 & 724.00 \\
+		\textbf{25\%} & 86.25 & 108.00 & 259.75 & 277.50 & 370.25 & 867.00 & 925.75 & 1132.75 \\
+		\textbf{50\%} & 87.50 & 138.00 & 315.50 & 307.00 & 423.00 & 1101.00 & 1184.00 & 1558.00 \\
+		\textbf{75\%} & 97.00 & 172.75 & 385.25 & 369.25 & 488.50 & 1231.75 & 1811.75 & 3209.50 \\
+		\textbf{max} & 120.00 & 196.00 & 521.00 & 582.00 & 773.00 & 2489.00 & 5000.00 & 3710.00 \\
+		\textbf{Error Rate} & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.06 & 0.20 & 0.35 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
 
-These tables indicate that as \( p_B \) approaches \( p_A \), the mean stopping time and the variability (as measured by the standard deviation) increase. The error rate also tends to rise, especially for higher delta values, reaffirming the trade-off between speed and accuracy in sequential testing.
+\begin{table}[H]
+	\centering
+	\caption{Descriptive Statistics and Error Rate for \( \delta = 0.2 \)}
+	\label{tab:descriptive_stats_delta_02}
+	\begin{tabular}{llcccccccc}
+		\toprule
+		& \multicolumn{8}{c}{$p_B$} \\ \cmidrule(lr){2-9}
+		& 0.2 & 0.3 & 0.4 & 0.425 & 0.45 & 0.475 & 0.49 & 0.495 \\
+		\midrule
+		\textbf{mean} & 41.60 & 82.80 & 160.40 & 226.90 & 256.00 & 356.40 & 323.60 & 347.40 \\
+		\textbf{std} & 11.55 & 24.67 & 122.09 & 141.22 & 94.50 & 143.24 & 280.86 & 232.70 \\
+		\textbf{min} & 25.00 & 55.00 & 69.00 & 108.00 & 84.00 & 105.00 & 97.00 & 53.00 \\
+		\textbf{25\%} & 31.75 & 68.00 & 92.00 & 149.50 & 187.75 & 308.00 & 155.50 & 122.50 \\
+		\textbf{50\%} & 41.00 & 79.50 & 118.50 & 184.00 & 258.00 & 345.00 & 239.00 & 371.50 \\
+		\textbf{75\%} & 52.50 & 87.00 & 139.75 & 206.25 & 336.00 & 413.00 & 329.25 & 513.25 \\
+		\textbf{max} & 57.00 & 145.00 & 432.00 & 537.00 & 363.00 & 590.00 & 1032.00 & 705.00 \\
+		\textbf{Error Rate} & 0.00 & 0.00 & 0.00 & 0.01 & 0.04 & 0.18 & 0.35 & 0.41 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
 
-\subsection{Summary}
+\begin{table}[H]
+	\centering
+	\caption{Descriptive Statistics and Error Rate for \( \delta = 0.3 \)}
+	\label{tab:descriptive_stats_delta_03}
+	\begin{tabular}{llcccccccc}
+		\toprule
+		& \multicolumn{8}{c}{$p_B$} \\ \cmidrule(lr){2-9}
+		& 0.2 & 0.3 & 0.4 & 0.425 & 0.45 & 0.475 & 0.49 & 0.495 \\
+		\midrule
+		\textbf{mean} & 34.30 & 38.90 & 129.50 & 112.40 & 204.00 & 242.00 & 209.50 & 129.90 \\
+		\textbf{std} & 10.49 & 18.12 & 57.75 & 46.75 & 197.23 & 171.60 & 79.28 & 99.85 \\
+		\textbf{min} & 17.00 & 18.00 & 39.00 & 40.00 & 49.00 & 64.00 & 52.00 & 29.00 \\
+		\textbf{25\%} & 28.25 & 29.25 & 81.50 & 71.75 & 87.50 & 142.50 & 177.00 & 68.50 \\
+		\textbf{50\%} & 33.00 & 32.00 & 154.00 & 130.00 & 136.00 & 179.50 & 193.00 & 96.00 \\
+		\textbf{75\%} & 40.25 & 51.75 & 174.75 & 149.00 & 198.75 & 345.25 & 257.75 & 188.00 \\
+		\textbf{max} & 53.00 & 68.00 & 190.00 & 168.00 & 672.00 & 583.00 & 338.00 & 349.00 \\
+		\textbf{Error Rate} & 0.00 & 0.00 & 0.01 & 0.07 & 0.12 & 0.29 & 0.40 & 0.45 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
 
-This analysis demonstrates the complex interplay between delta values, stopping times, and error rates in sequential A/B testing. Selecting an appropriate delta is crucial, as it balances the need for quick decision-making against the risk of errors. The results emphasize that while larger delta values can significantly reduce average stopping times, they do so at the cost of higher error rates. Therefore, the choice of delta should be carefully aligned with the specific goals and constraints of the testing scenario.
+The descriptive statistics for table \ref{tab:descriptive_stats_delta_01} with corresponding to \(\delta = 0.1\) demonstrate that as \( p_B \) approaches 0.5, the average stopping time increases significantly, with a corresponding rise in the error rate. The increase in both the mean and standard deviation indicates that the test requires more data to reach a conclusion as the difference between \( p_A \) and \( p_B \)~narrows.
 
+For table \ref{tab:descriptive_stats_delta_02} with corresponding to \(\delta = 0.2\), we observe a similar trend, but with reduced stopping times and slightly higher error rates compared to \( \delta = 0.1 \). The distribution of~stopping times is still wide, reflecting the increased speed at the cost of precision.
 
+Finally, the statistics for table \ref{tab:descriptive_stats_delta_03} with corresponding to \(\delta = 0.3\) show a more aggressive approach, where the average stopping times are further reduced, but the error rates become more pronounced, especially as \( p_B \) nears \( p_A \). The wide variability in stopping times and higher error rates highlight the trade-off made by choosing a larger delta.
+
+Using lemma \(\ref{lem:sample_size}\), we can estimate the required sample sizes for a classical A/B test under the same parameters. The classical test would require sample sizes of 10,387,~2,590,~and 1,146 for \( \delta = 0.1 \), \( \delta = 0.2 \), and \( \delta = 0.3 \) respectively, in order to achieve similar power and significance levels. This comparison underscores the efficiency of sequential A/B testing, as it typically requires fewer observations to reach a decision while maintaining control over error rates.
+
+These tables collectively illustrate how different delta values influence the dynamics of sequential A/B testing. Lower delta values promote caution and accuracy, leading to~longer tests with lower error rates, whereas higher delta values speed up the process but at the expense of increased risk.
 
 {\backmatter \chapter{Summary}}
 
